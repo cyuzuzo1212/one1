@@ -1,0 +1,185 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  box-sizing: border-box;
+  --blue: blue;
+  --gray: rgb(245, 245, 255);
+}
+
+body {
+  width: 100%;
+}
+
+.bg {
+  position: fixed;
+  top: 0;
+  width: 50vw;
+  height: 100vh;
+  z-index: -9999;
+}
+
+.bg.blue {
+  background: var(--blue);
+  left: 0;
+}
+
+.bg.gray {
+  background: var(--gray);
+  right: 0;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: Roboto, 'Open Sans', 'Segoe UI', 'Helvetica Neue', sans-serif;
+}
+
+main {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 25px;
+  background: white;
+  overflow: hidden;
+  box-shadow: 0 20px 30px 0 rgba(128, 128, 128, 0.205);
+}
+
+main .section {
+  padding: 25px;
+}
+
+.stats-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background: var(--gray);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form .field {
+  margin: 8px 0;
+}
+
+form .field > * {
+  width: 100%;
+}
+
+.signup {
+  max-width: 375px;
+  background: var(--gray);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px auto;
+}
+
+.signup > h1, .signup > p {
+  text-align: center;
+}
+
+.signup > h1 {
+  font-size: 1.6rem;
+}
+
+.field input {
+  height: 2.4rem;
+  border-radius: 5px;
+  padding-left: 1rem;
+  font: inherit;
+  background-color: white;
+  border: 1px solid rgba(48, 48, 63, 0.514);
+}
+
+.field p {
+  margin: 0;
+  font-size: 80%;
+}
+
+div.agreement {
+  cursor: pointer;
+}
+
+.agreement label {
+  font-size: 80%;
+}
+
+.agreement a {
+  color: darkblue;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.signup button {
+  height: 2.4rem;
+  color: white;
+  background-color: var(--blue);
+  font-family: inherit;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin: 30px 0;
+}
+
+.signup-with {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.signup-with > * {
+  padding: 5px;
+  width: 40px;
+  height: 40px;
+  margin: 0 5px;
+  background: white;
+  border-radius: 5px;
+}
+
+.signup-with img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.bars {
+  display: flex;
+  justify-content: center;
+}
+
+.bars hr {
+  width: 75px;
+  margin: 0 5px;
+  border: 0;
+  border-top: 5px solid rgba(0, 0, 0, 0.2);
+}
+
+hr.hr1 {
+  border-top: 5px solid blue;
+}
+
+.logo {
+  max-height: 40px;
+}
+
+.stats-graphic {
+  margin: 50px auto;
+  max-width: 100%;
+}
+
+.stats-section p {
+  text-align: center;
+}
+
+.stats-section .graphic {
+  align-self: center;
+}
